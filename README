@@ -55,7 +55,9 @@ graph TD
 - **DBスキーマとセキュリティチェックの検証**: [Evidence 2](/docs/evidence/2.png)
 
 ## 🗂 ディレクトリ構成
+
 ```text
+
 wp-payment-logger-pipeline/
 ├── README.md               # プロジェクト概要・設計思想
 ├── docs/
@@ -65,6 +67,7 @@ wp-payment-logger-pipeline/
 │   └── verification.sql    # 整合性検証用クエリ集
 └── src/
     └── payment-logger.php  # プラグインのメインロジック (PHP 8.x)
+
 ```
 
 ## ⚠️ 注意事項
@@ -72,5 +75,5 @@ wp-payment-logger-pipeline/
 - 本番環境への導入時は、シミュレーター機能を無効化し、ロギングエンジンのみを切り出して使用してください。
 
 ---
-**Author**: Moheji (Ko Sato)  
+**Author**: Moheji (Ko Sato)
 **Project**: 農業法人ECサイト 決済エンジニアリング基盤構築
