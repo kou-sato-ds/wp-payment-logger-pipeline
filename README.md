@@ -18,7 +18,7 @@ graph TD
     subgraph Security_Layer [セキュリティ・匿名化層]
         B --> C{PiiMasker Class}
         C -->|個人情報検出| D[Masking / Hashing]
-        D -->|***@example.com| E[匿名化済みJSON]
+        D -->|"***@example.com"| E[匿名化済みJSON]
     end
 
     subgraph Data_Storage [データベース層]
@@ -51,8 +51,9 @@ graph TD
 - **解決策**: アプリケーションの要求仕様をリバースエンジニアリングし、`method` や `requested_at` カラムを含む最新のスキーマへDDLをアップデート。
 
 ## 📊 証跡 (Evidence)
-- **PIIマスキングと実行成功の様子**: [Evidence 1](/docs/evidence/1.png)
-- **DBスキーマとセキュリティチェックの検証**: [Evidence 2](/docs/evidence/2.png)
+- **PIIマスキングと実行成功の様子**:![Evidence 1](./docs/evidence/1.png)
+
+- **DBスキーマとセキュリティチェックの検証**:![Evidence 2](./docs/evidence/2.png)
 
 ## 🗂 ディレクトリ構成
 
